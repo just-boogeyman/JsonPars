@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		04B3AD7F2948BF1500654BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD7E2948BF1500654BDD /* AppDelegate.swift */; };
 		04B3AD812948BF1500654BDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD802948BF1500654BDD /* SceneDelegate.swift */; };
-		04B3AD832948BF1500654BDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD822948BF1500654BDD /* ViewController.swift */; };
 		04B3AD862948BF1500654BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B3AD842948BF1500654BDD /* Main.storyboard */; };
 		04B3AD882948BF1600654BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B3AD872948BF1600654BDD /* Assets.xcassets */; };
 		04B3AD8B2948BF1600654BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B3AD892948BF1600654BDD /* LaunchScreen.storyboard */; };
+		04B3AD982948C0AC00654BDD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD972948C0AC00654BDD /* Person.swift */; };
+		04B3AD9A2948C70400654BDD /* PersoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3AD992948C70400654BDD /* PersoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04B3AD7B2948BF1500654BDD /* JsonPars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonPars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B3AD7E2948BF1500654BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B3AD802948BF1500654BDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B3AD822948BF1500654BDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04B3AD852948BF1500654BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B3AD872948BF1600654BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B3AD8A2948BF1600654BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B3AD8C2948BF1600654BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B3AD972948C0AC00654BDD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		04B3AD992948C70400654BDD /* PersoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		04B3AD7D2948BF1500654BDD /* JsonPars */ = {
 			isa = PBXGroup;
 			children = (
-				04B3AD7E2948BF1500654BDD /* AppDelegate.swift */,
-				04B3AD802948BF1500654BDD /* SceneDelegate.swift */,
-				04B3AD822948BF1500654BDD /* ViewController.swift */,
-				04B3AD842948BF1500654BDD /* Main.storyboard */,
-				04B3AD872948BF1600654BDD /* Assets.xcassets */,
-				04B3AD892948BF1600654BDD /* LaunchScreen.storyboard */,
-				04B3AD8C2948BF1600654BDD /* Info.plist */,
+				04B3AD962948C04500654BDD /* Models */,
+				04B3AD922948BF2B00654BDD /* App */,
+				04B3AD932948BF3400654BDD /* ViewControllers */,
+				04B3AD942948BF3E00654BDD /* Storyboards */,
+				04B3AD952948C03400654BDD /* Resources */,
 			);
 			path = JsonPars;
+			sourceTree = "<group>";
+		};
+		04B3AD922948BF2B00654BDD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04B3AD7E2948BF1500654BDD /* AppDelegate.swift */,
+				04B3AD802948BF1500654BDD /* SceneDelegate.swift */,
+				04B3AD8C2948BF1600654BDD /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04B3AD932948BF3400654BDD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B3AD992948C70400654BDD /* PersoneViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04B3AD942948BF3E00654BDD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04B3AD842948BF1500654BDD /* Main.storyboard */,
+				04B3AD892948BF1600654BDD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04B3AD952948C03400654BDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04B3AD872948BF1600654BDD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04B3AD962948C04500654BDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04B3AD972948C0AC00654BDD /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B3AD832948BF1500654BDD /* ViewController.swift in Sources */,
 				04B3AD7F2948BF1500654BDD /* AppDelegate.swift in Sources */,
+				04B3AD9A2948C70400654BDD /* PersoneViewController.swift in Sources */,
+				04B3AD982948C0AC00654BDD /* Person.swift in Sources */,
 				04B3AD812948BF1500654BDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonPars/Info.plist;
+				INFOPLIST_FILE = JsonPars/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonPars/Info.plist;
+				INFOPLIST_FILE = JsonPars/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
